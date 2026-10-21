@@ -10,6 +10,9 @@
 
 Não precisa instalar Node.js, banco de dados ou executar build. O ZIP contém a página e somente os arquivos de mídia utilizados, incluindo o vídeo e a miniatura dos pastores.
 
-Os metadados de compartilhamento ainda apontam para o endereço da prévia no GitHub Pages. Informe o domínio definitivo para atualizar canonical, og:url e URLs da miniatura antes do compartilhamento definitivo. O site pode ser carregado na Hostinger enquanto esse ajuste é preparado.
+Os metadados de compartilhamento estão configurados para https://www.igrejaadmac.com.br/. A miniatura estará disponível quando o domínio servir os arquivos por HTTPS.
 
 O pacote mantém o conteúdo da versão aprovada, incluindo a faixa de prévia para avaliação. O ZIP não publica o site automaticamente.
+
+## Revisão do alerta do Defender
+O pacote anterior foi sinalizado pelo Windows Defender como Trojan:Script/Ulthar.A!ml em index.html. O único JavaScript existente foi revisado: era uma reserva para imagens externas que já não existem no site. Esse código desnecessário foi removido; o HTML atual não contém scripts nem eventos inline. Não há antivírus disponível neste ambiente, e a causa da detecção anterior não foi confirmada. Integridade do ZIP e inspeção do código não substituem uma verificação antivírus. Mantenha o Defender ativo e não libere o arquivo se houver novo alerta.
